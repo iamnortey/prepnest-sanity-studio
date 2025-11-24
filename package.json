@@ -1,0 +1,32 @@
+{
+  "name": "prepnest-sanity-studio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Sanity CMS Studio for Prepnest - WASSCE/BECE Educational Platform",
+  "scripts": {
+    "dev": "sanity dev",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "start": "sanity start",
+    "rewrite": "npx ts-node scripts/batchRewriteLessons.ts",
+    "rewrite:dry": "DRY_RUN=true npx ts-node scripts/batchRewriteLessons.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.0",
+    "@sanity/client": "^6.15.0",
+    "@sanity/vision": "^3.0.0",
+    "dotenv": "^16.4.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sanity": "^3.36.0",
+    "styled-components": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
